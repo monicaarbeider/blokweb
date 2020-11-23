@@ -66,7 +66,7 @@
 
 ## Breakdownschets (week 1)
 
-Brakdownschets:** Allerhande homepage hoofdstructuur + section details
+**Breakdownschets:** Allerhande homepage hoofdstructuur + section details
 
 <img src="images/breakdownschets/breakdownschets-details.png" alt="breakdownschets details">
 
