@@ -66,7 +66,11 @@
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+Brakdownschets:** Allerhande homepage hoofdstructuur + section details
+
+<img src="images/breakdownschets/breakdownschets-details.png" alt="breakdownschets details">
+
+<img src="images/breakdownschets/breakdownschets-hoofdstructuur.png" alt="breakdownschets hoofdstructuur">
 
 
 
@@ -78,10 +82,10 @@
 
 **Je opdracht:** [AH Allerhande](https://www.ah.nl/allerhande)
 
-**Screenshot(s) van de eerste pagina (small screen):** Allerhande homepage
+**Screenshots eerste pagina:** Allerhande homepage
 
 <img src="images/case/screenshots-allerhande-homepage.png" alt="allerhande homepage">
 
-**Screenshot(s) van de tweede pagina (small screen):** Allerhande recept
+**Screenshots tweede pagina:** Allerhande recept
 
 <img src="images/case/screenshots-allerhande-recept.png" alt="allerhande recept">
