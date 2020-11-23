@@ -1,7 +1,9 @@
 # Procesverslag
-**Auteur:** Monica Arbeider
+**Student:** Monica Arbeider
+**Studentnummer:** 500733786
+**Klas:** KlasInh09
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
+**Markdown Cheat Sheet:** [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
 
@@ -67,18 +69,26 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** Rode pieste
 
-**Je focus:** -kies uit responsive óf surface plane-
+**Je focus:** Responsive
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** [Hulp bij het schrijven van Markdown](https://www.ah.nl/allerhande)
 
-**Screenshot(s) van de eerste pagina (small screen):**
+**Screenshot(s) van de eerste pagina (small screen):** Allerhande homepage
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/case/allerhande-homepage-1.jpg" width="375px" alt="allerhande homepage">
+<img src="images/case/allerhande-homepage-2.jpg" width="375px" alt="allerhande homepage">
+<img src="images/case/allerhande-homepage-3.jpg" width="375px" alt="allerhande homepage">
+<img src="images/case/allerhande-homepage-4.jpg" width="375px" alt="allerhande homepage">
 
-**Screenshot(s) van de tweede pagina (small screen):**
+**Screenshot(s) van de tweede pagina (small screen):** Allerhande recept
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/case/allerhande-recept-1.jpg" width="375px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-2.jpg" width="375px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-3.jpg" width="375px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-4.jpg" width="375px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-5.jpg" width="375px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-6.jpg" width="375px" alt="allerhande recept">
+
