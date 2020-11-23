@@ -1,6 +1,8 @@
 # Procesverslag
 **Student:** Monica Arbeider
+
 **Studentnummer:** 500733786
+
 **Klas:** KlasInh09
 
 **Markdown Cheat Sheet:** [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -74,21 +76,21 @@
 
 **Je focus:** Responsive
 
-**Je opdracht:** [Hulp bij het schrijven van Markdown](https://www.ah.nl/allerhande)
+**Je opdracht:** [AH Allerhande](https://www.ah.nl/allerhande)
 
 **Screenshot(s) van de eerste pagina (small screen):** Allerhande homepage
 
-<img src="images/case/allerhande-homepage-1.jpg" width="375px" alt="allerhande homepage">
-<img src="images/case/allerhande-homepage-2.jpg" width="375px" alt="allerhande homepage">
-<img src="images/case/allerhande-homepage-3.jpg" width="375px" alt="allerhande homepage">
-<img src="images/case/allerhande-homepage-4.jpg" width="375px" alt="allerhande homepage">
+<img src="images/case/allerhande-homepage-1.jpg" width="320px" alt="allerhande homepage">
+<img src="images/case/allerhande-homepage-2.jpg" width="320px" alt="allerhande homepage">
+<img src="images/case/allerhande-homepage-3.jpg" width="320px" alt="allerhande homepage">
+<img src="images/case/allerhande-homepage-4.jpg" width="320px" alt="allerhande homepage">
 
 **Screenshot(s) van de tweede pagina (small screen):** Allerhande recept
 
-<img src="images/case/allerhande-recept-1.jpg" width="375px" alt="allerhande recept">
-<img src="images/case/allerhande-recept-2.jpg" width="375px" alt="allerhande recept">
-<img src="images/case/allerhande-recept-3.jpg" width="375px" alt="allerhande recept">
-<img src="images/case/allerhande-recept-4.jpg" width="375px" alt="allerhande recept">
-<img src="images/case/allerhande-recept-5.jpg" width="375px" alt="allerhande recept">
-<img src="images/case/allerhande-recept-6.jpg" width="375px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-1.jpg" width="320px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-2.jpg" width="320px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-3.jpg" width="320px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-4.jpg" width="320px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-5.jpg" width="320px" alt="allerhande recept">
+<img src="images/case/allerhande-recept-6.jpg" width="320px" alt="allerhande recept">
 
