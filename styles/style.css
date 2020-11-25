@@ -1,5 +1,78 @@
-/* CSS Document */
+/* Algemeen */
+
 *, *::after, *::before {
-  box-sizing:border-box;  
+    box-sizing:border-box;
 }
 
+body {
+    margin: 0;
+    font-family: Greycliff-Regular;
+    color: #303030;
+}
+
+.container {
+    padding: 0 16px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Typography */
+
+@font-face {
+    font-family: Greycliff-Bold;
+    src: url("/fonts/GreycliffCF-Bold.eot") format("eot"),
+    url("/fonts/GreycliffCF-Bold.woff") format("woff"),
+    url("/fonts/GreycliffCF-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Greycliff-Regular;
+    src: url("/fonts/GreycliffCF-Regular.eot") format("eot"),
+    url("/fonts/GreycliffCF-Regular.woff") format("woff"),
+    url("/fonts/GreycliffCF-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Hamburg-AH-Bold;
+    src: url("/fonts/hamburg-ah-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Hamburg-AH-Regular;
+    src: url("/fonts/hamburg-ah-regular.woff2") format("woff2");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Greycliff-Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+button {
+    padding: 11px 16px;
+    background-color: #ea3d3d;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-main {
+    padding: 16px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.nav-main-item.logo {
+    text-align: center;
+}
+
+.nav-main-item img {
+    height: 100%;
+}
