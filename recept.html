@@ -12,266 +12,400 @@
 </head>
 
 <body>
+    <!-- Begin menu -->
     <header class="site-header" id="toggle-menu">
+        <!-- Begin menu Albert Heijn -->
         <div class="main-navigation-container">
             <div class="container">
                 <nav class="nav-main">
-
                     <div class="nav-main-item mobile-toggle">
                         <a href="#">
                             <span class="nav-img">
-                                <img src="./images/icons/icon-bars.svg" alt="">
+                                <img src="./images/icons/icon-bars.svg" alt="Menu">
                             </span>
                         </a>
                     </div>
+
                     <div class="nav-main-item logo">
                         <span class="nav-img">
-                            <img src="./images/logo/logo-ah.svg" alt="">
+                            <img src="./images/logo/logo-ah.svg" alt="Logo Albert Heijn">
                         </span>
+
                         <div class="link-icon login">
                             <span class="label">
                                 Inloggen
                             </span>
+
                             <span class="icon link-dropdown">
-                                <img src="./images/icons/chevron-down.svg" alt="">
+                                <img src="./images/icons/icon-chevron-down-blue.svg" alt="Dropdown">
                             </span>
                         </div>
                     </div>
-                    <div class="nav-main-item link-container">
 
+                    <div class="nav-main-item link-container">
                         <span class="nav-link">
                             <a href="#">Producten</a>
                         </span>
+
                         <span class="nav-link">
                             <a href="#">Bonus</a>
-
                         </span>
+
                         <span class="nav-link">
                             <a href="#">Recepten</a>
-
                         </span>
+
                         <span class="nav-link">
                             <a href="#">Acties</a>
                         </span>
+
                         <span class="nav-link icon">
                             <a href="#">Meer
                                 <span class="icon link-dropdown"></span>
                             </a>
                         </span>
                     </div>
+
                     <div class="nav-main-item searchbar">
                         <input aria-label="Zoeken" value="" placeholder="Zoeken" class="search-input">
                     </div>
+
                     <div class="nav-main-item shopping-cart">
                         <a href="#">
                             <span class="link-label">Online Bestellen</span>
                             <span class="nav-img">
-                                <img src="./images/icons/icon-cart.svg" alt="">
+                                <img src="./images/icons/icon-cart.svg" alt="Winkelwagen">
                             </span>
                         </a>
                     </div>
                 </nav>
             </div>
         </div>
-        <div class="sub-navigation-container light">
+        <!-- Einde menu Albert Heijn -->
 
+        <!-- Begin menu Allerhande -->
+        <div class="sub-navigation-container light">
             <div class="container medium">
                 <nav class="nav-allerhande ">
-
                     <a href="/">
                         <img class="logo" src="./images/logo/logo-allerhande-zwart.svg" alt="Allerhande logo">
                     </a>
+
                     <ul class="menu" role="menu">
                         <li class="menu-item active">
                             <a href="/allerhande" class="" aria-label="Recepten" role="menuitem">
                                 <span class="">Recepten</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/" class="" aria-label="Video's" role="menuitem">
                                 <span class="">Video's</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/" class="" aria-label="Thema's" role="menuitem">
                                 <span class="">Thema's</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/allerhande/favorieten" class="" aria-label="Mijn recepten" role="menuitem">
                                 <span>Mijn recepten</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/allerhande/allerhandekids" class="" aria-label="Kids" role="menuitem">
                                 <span class="label">Kids</span>
                             </a>
                         </li>
                     </ul>
+
                     <div class="menu-toggle" id="allerhande-menu-toggle">
-                        <span class="label">
-                            Overzicht
-                        </span>
-                        <span class="icon link-more">
-                        </span>
+                        <span class="label">Overzicht</span>
+                        <span class="icon link-more"></span>
                     </div>
 
                     <div class="input-box">
                         <input class="input-field" placeholder="Typ hier" type="text">
                         <button class="search-button">
-                            <img class="icon" src="./images/icons/icon-search.svg" alt="zoeken">
+                            <img class="icon" src="./images/icons/icon-search.svg" alt="Zoeken">
                         </button>
                     </div>
-
                 </nav>
             </div>
         </div>
+        <!-- Einde menu Allerhande -->
+
+        <!-- Begin mobiele overlay -->
         <span class="overlay" id="overlay-toggle"></span>
-
+        <!-- Einde mobiele overlay -->
     </header>
+    <!-- Einde menu -->
 
+    <!-- Begin recept pagina inhoud -->
     <main id="scroll-top">
-        <section>
+        <!-- Begin recept pagina header -->
+        <section id="recept-header">
             <div class="container medium">
-                <h1>Volkorenpasta met kip, Chinese kool en tahin</h1>
+                <h1 class="small">Volkorenpasta met kip, Chinese kool en tahin</h1>
                 <span class="subtitle">Geef een draai aan volkorenspaghetti en tover om tot een wokgerecht.</span>
             </div>
         </section>
+        <!-- Einde recept pagina header -->
+
+        <!-- Begin recept section -->
         <section class="hero-section no-space">
             <div class="recipe-container">
-
+                <!-- Begin achtergrond -->
                 <div class="recipe-hero">
-                    <img class="hero-image" src="images/recept-page/recept-volkorenpasta-kip.jpg" />
+                    <img class="hero-image" src="images/recept-page/recept-volkorenpasta-kip.jpg"/ alt="Volkorenpasta met kip" title="Volkorenpasta met kip">
                 </div>
+                <!-- Einde achtergrond -->
+
+                <!-- Begin recept box -->
                 <div class="container medium">
-                    <div class="recipe-card">
+                    <div class="recipe-box">
                         <ul class="recipe-features">
                             <li class="feature">
                                 <div class="icon icon-course">
-                                    <img src="images/icons/icon-meal.svg">
-                                </div><span>hoofdgerecht</span>
+                                    <img src="images/icons/icon-meal.svg" alt="soort recept">
+                                </div>
+                                <span>hoofdgerecht</span>
                             </li>
+
                             <li class="feature">
                                 <div class="icon icon-people">
-                                    <img src="images/icons/icon-people-fill.svg">
+                                    <img src="images/icons/icon-people-fill.svg" alt="aantal personen">
                                 </div>
                                 <span>
                                     <a class="servings">4 personen</a>
                                 </span>
                             </li>
+
                             <li class="feature">
                                 <div class="icon icon-nutritional">
-                                    <img src="images/icons/icon-kcal-fill.svg">
+                                    <img src="images/icons/icon-kcal-fill.svg" alt="aantal kcal">
 
                                 </div>
                                 <span>500 kcal
                                     <a href="#" class="more">voedingswaarden</a></span>
                             </li>
+
                             <li class="feature">
                                 <div class="icon icon-time">
-                                    <img src="images/icons/icon-clock.svg">
+                                    <img src="images/icons/icon-clock.svg" alt="tijd">
                                 </div>
                                 <span>15 min. bereiden </span>
-
                             </li>
                         </ul>
+
+                        <!-- Begin beoordeling -->
                         <div class="rating-container">
                             <div class="stars">
                                 <span class="icon star full">
-                                    <img src="images/icons/icon-star-fill-blue.svg">
+                                    <img src="images/icons/icon-star-fill-blue.svg" alt="ster">
                                 </span>
-                                <span class="icon star full">
-                                    <img src="images/icons/icon-star-fill-blue.svg">
-                                </span>
-                                <span class="icon star full">
-                                    <img src="images/icons/icon-star-fill-blue.svg">
 
-                                </span>
                                 <span class="icon star full">
-                                    <img src="images/icons/icon-star-fill-blue.svg">
-
+                                    <img src="images/icons/icon-star-fill-blue.svg" alt="ster">
                                 </span>
+
+                                <span class="icon star full">
+                                    <img src="images/icons/icon-star-fill-blue.svg" alt="ster">
+                                </span>
+
+                                <span class="icon star full">
+                                    <img src="images/icons/icon-star-fill-blue.svg" alt="ster">
+                                </span>
+
                                 <span class="icon star empty">
-                                    <img src="images/icons/icon-star-fill-grey.svg">
-
+                                    <img src="images/icons/icon-star-fill-grey.svg" alt="ster">
                                 </span>
                             </div>
+
                             <div class="rating">
                                 <span class="amount">(4)</span>
                                 <span class="link">waardeer</span>
                             </div>
                         </div>
+                        <!-- Einde beoordeling -->
+
+                        <!-- Begin labels -->
                         <div class="recipe-tags">
                             <div class="tag">snel</div>
                             <div class="tag">gezond</div>
                             <div class="tag">lactosevrij</div>
                         </div>
+                        <!-- Einde labels -->
                     </div>
                 </div>
+                <!-- Einde recept box -->
             </div>
         </section>
-        <!-- Ingredienten -->
-        <section id="recept-header">
-            <div class="container medium">
+        <!-- Einde recept section -->
 
+        <!-- Begin recept content -->
+        <section class="padding-tb">
+            <div class="container medium">
                 <div class="row mobile-one tablet-two desktop-two-uneven">
-                    <!-- begin recept card -->
-                    <div class="col">Ingredienten
-                        <ul id="todoList">
-                            <li><input type="checkbox" id="checkbox_1"><span id="item_1">300 g volkorenspaghetti</span>
-                            </li>
-                            <li><input type="checkbox" id="checkbox_2"><span id="item_2">1 Chinese kool</span></li>
-                            <li><input type="checkbox" id="checkbox_3"><span id="item_3">1 verse rode peper</span></li>
-                            <li><input type="checkbox" id="checkbox_4"><span id="item_4">1 bosje salade-ui</span></li>
-                            <li><input type="checkbox" id="checkbox_5"><span id="item_5">2 tenen knoflook</span></li>
-                            <li><input type="checkbox" id="checkbox_6"><span id="item_6">50 g verse gember</span></li>
-                            <li><input type="checkbox" id="checkbox_7"><span id="item_7">1 el milde olijfolie</span>
-                            </li>
-                            <li><input type="checkbox" id="checkbox_8"><span id="item_8">400 g kipfiletreepjes</span>
-                            </li>
-                            <li><input type="checkbox" id="checkbox_9"><span id="item_9">3 el sojasaus</span></li>
-                            <li><input type="checkbox" id="checkbox_10"><span id="item_10">2 el tahin</span></li>
+
+                    <!-- Begin ingrediënten -->
+                    <div class="col">
+                        <h2 class="small">Ingrediënten</h2>
+
+                        <ul id="checklist">
+                            <li><input type="checkbox"><span>300 g volkorenspaghetti</span></li>
+                            <li><input type="checkbox"><span>1 Chinese kool</span></li>
+                            <li><input type="checkbox"><span>1 verse rode peper</span></li>
+                            <li><input type="checkbox"><span>1 bosje salade-ui</span></li>
+                            <li><input type="checkbox"><span>2 tenen knofloop</span></li>
+                            <li><input type="checkbox"><span>50 g verse gember</span></li>
+                            <li><input type="checkbox"><span>1 el milde olijfolie</span></li>
+                            <li><input type="checkbox"><span>400 g kipfiletreepjes</span></li>
+                            <li><input type="checkbox"><span>3 el sojasaus</span></li>
+                            <li><input type="checkbox"><span>2 el tahin</span></li>
                         </ul>
                     </div>
-                    <div class="col"> Bereiden</div>
+                    <!-- Einde ingrediënten -->
+
+                    <!-- Begin stappenplan -->
+                    <div class="col">
+                        <h2 class="small">Bereiden</h2>
+                        <a class="btn secondary" href="">stap voor stap koken</a>
+
+                        <p>1. Kook de spaghetti volgens de aanwijzingen op de verpakking. Giet af, maar vang 1 kopje kookvocht op (per 4 personen).</p>
+
+                        <p>2. Snijd ondertussen de Chinese kool in parten en vervolgens in de breedte in fijne reepjes. Snijd het steeltje van de rode peper. Halveer de peper in de lengte en verwijder met een scherp mesje de zaadlijsten. Snijd het vruchtvlees fijn. Snijd de salade-ui in dunne ringetjes en de knoflook fijn. Schil de gember en snijd heel fijn.</p>
+
+                        <p>3. Verhit de olie in een grote hapjespan of wok. Fruit de helft van de salade-ui met de knoflook 2 min. Voeg de rode peper en gember toe en bak 2 min. Voeg de kipfiletreepjes toe en roerbak 5 min. tot ze gaar zijn. Voeg de spaghetti en kool toe en roerbak 2 min. Voeg de sojasaus, tahin en 2 el kookvocht (per 4 personen) toe en roer door. Bestrooi met de rest van de salade-ui en serveer.</p>
+                    </div>
+                    <!-- Einde stappenplan -->
                 </div>
             </div>
         </section>
+        <!-- Einde recept content -->
 
-        <section>
+        <!-- Begin maaltijd info -->
+        <section class="food-info padding-tb">
             <div class="container medium">
                 <div class="row mobile-one tablet-two desktop-three">
-                    <div class="col"> voedingswaarden</div>
-                    <div class="col">tags</div>
-                    <div class="col">Ooko te zien</div>
+
+                    <!-- Begin voedingswaarden -->
+                    <div class="col">
+                        <h3 class="small">Voedingswaarden</h3>
+
+                        <ul class="info-table">
+                           <li>
+                               <span>energie</span>
+                               <span>500 kcal</span>
+                            </li>
+                            <li>
+                               <span>eiwit</span>
+                               <span>39 g</span>
+                            </li>
+
+                            <li>
+                               <span>koolhydraten</span>
+                               <span>56 g</span>
+                            </li>
+
+                            <li>
+                               <span>vet</span>
+                               <span>11 g</span>
+                            </li>
+
+                            <li>
+                               <span>waarvan verzadigd</span>
+                               <span>2 g</span>
+                            </li>
+
+                            <li>
+                               <span>natrium</span>
+                               <span>720 g</span>
+                            </li>
+
+                            <li>
+                               <span>vezels</span>
+                               <span>10 g</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Einde voedingswaarden -->
+
+                    <!-- Begin recept tags -->
+                    <div class="col">
+                        <h3 class="small">Tags</h3>
+
+                        <div class="recipe-tags">
+                            <div class="tag">snel</div>
+                            <div class="tag">gezond</div>
+                            <div class="tag">lactosevrij</div>
+                            <div class="tag">wat eten we vandaag</div>
+                            <div class="tag">bakken</div>
+                        </div>
+                    </div>
+                    <!-- Einde recept tags -->
+
+                    <!-- Begin magazine link -->
+                    <div class="col">
+                        <h3 class="small">Ook te zien in</h3>
+                        <p><a href="/">Allerhande magazine 2021 nr. 01 - Een goed begin!</a></p>
+                    </div>
+                    <!-- Einde magazine link -->
                 </div>
             </div>
         </section>
+        <!-- Einde maaltijd info -->
 
-        <section class="recommended">
+        <!-- Begin aanbevolen recepten -->
+        <section class="recommended padding-tb">
             <div class="container medium">
                 <h2 class="small">Ook lekker</h2>
 
                 <div class="row recipe desktop-three tablet-two mobile-one">
                     <div class="col">
-                        <a href="">
-                            <img src="./images/recept-page/recept-volkorenpasta-tonijn.jpg" alt="Crème brûlée"vtitle="Crème brûlée">
+                        <a href="/">
+                            <img src="./images/recept-page/recept-volkorenpasta-tonijn.jpg" alt="Pasta met tonijn" title="Pasta met tonijn">
 
                             <h4 class="large">Penne met tonijn en gestoofde paprika</h4>
                         </a>
                     </div>
+
+                    <div class="col">
+                        <a href="/">
+                            <img src="./images/recept-page/recept-volkorenpasta-bolognese.jpg" alt="Pasta met bolognese" title="Pasta met bolognese">
+
+                            <h4 class="large">Volkorenpasta met bolognese saus</h4>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="/">
+                            <img src="./images/recept-page/recept-volkorenpasta-biefstuk.jpg" alt="Pasta met biefstuk" title="Pasta met biefstuk">
+
+                            <h4 class="large">Pasta met biefstuk</h4>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Back to top link -->
+                <a href="#scroll-top" class="to-top"> Scroll naar boven</a>
+                <!-- Back to top link -->
             </div>
-            <a href="#scroll-top"> Scroll naar boven</a>
         </section>
-
+        <!-- Einde aanbevolen recepten -->
     </main>
+    <!-- Einde recept pagina inhoud -->
 
+    <!-- Begin footer -->
     <footer>
         <div class="container medium">
+            <!-- Begin footer links -->
             <div class="row mobile-two tablet-four desktop-four">
-
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Nu populair</h3>
@@ -291,9 +425,9 @@
                         <li><a href="" class="site-link">Pasta</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
 
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Allerhande</h3>
@@ -310,9 +444,9 @@
                         <li><a href="" class="site-link">Over Allerhande</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
 
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Boodschappen</h3>
@@ -332,9 +466,9 @@
                         <li><a href="" class="site-link">AH Bezorgbundel</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
 
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Albert Heijn</h3>
@@ -353,19 +487,21 @@
                         <li><a href="" class="site-link">Duurzaam</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
             </div>
+            <!-- Einde footer links -->
 
+            <!-- Begin footer balk -->
             <div class="footer-balk">
                 <div class="contact divider">
                     <div class="social-media">
-                        <a href=""><img src="./images/icons/icon-facebook-beige.svg" alt=""></a>
-                        <a href=""><img src="./images/icons/icon-twitter-beige.svg" alt=""></a>
-                        <a href=""><img src="./images/icons/icon-instagram-beige.svg" alt=""></a>
+                        <a href=""><img src="./images/icons/icon-facebook-beige.svg" alt="Icoon Facebook"></a>
+                        <a href=""><img src="./images/icons/icon-twitter-beige.svg" alt="Icoon Twitter"></a>
+                        <a href=""><img src="./images/icons/icon-instagram-beige.svg" alt="Icoon Instagram"></a>
                     </div>
 
                     <div class="logo">
-                        <img src="./images/logo/logo-ah.svg" alt="">
+                        <img src="./images/logo/logo-ah.svg" alt="logo Albert Heijn">
                     </div>
                 </div>
 
@@ -379,10 +515,12 @@
                         <li><a href="" class="site-link">Kwetsbaarheid melden</a></li>
                     </ul>
                 </div>
+                <!-- Einde footer balk -->
             </div>
 
         </div>
     </footer>
+    <!-- Einde footer -->
 
     <script src="scripts/script.js"></script>
 </body>

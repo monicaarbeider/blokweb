@@ -1,32 +1,32 @@
-/* ------------------------- Variabelen ------------------------- */
+/* ------------------------- Layout ------------------------- */
 
-/* Kleuren */
+/* Algemeen */
 
-:root {
-    --black: #131313;
-    --black-light: #303030;
-    --white: #FFF;
-    --red: #EA3D3D;
-    --red-light: #E96666;
-    --beige: #BBB4AF;
-    --beige-light: #F0EfEA;
-    --grey: #B9B9B4;
-    --grey-light: #F7F7F7;
-    --grey-border: #acacac;
-    --grey-border-light: #E0E0E0;
-    --green: #6cbc88;
-    --green-light: #f0efea;
-    --transparent-white: rgba(255, 255, 255, .8);
-    scroll-behavior: smooth;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
-/* ------------------------- Responsive grid ------------------------- */
+/*
+:root {
+    scroll-behavior: smooth;
+}
+*/
+
+body {
+    margin: 0;
+    font-family: Greycliff-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: var(--black-light);
+}
+
+/* Containers */
 
 .container {
+    margin: auto;
     padding: 0 16px;
     width: 100%;
     max-width: 1488px;
-    margin: auto;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -39,110 +39,6 @@
     .container.medium {
         max-width: 1150px;
     }
-}
-
-.row {
-    display: grid;
-    grid-template-columns: auto;
-    row-gap: 16px;
-    column-gap: 16px;
-}
-
-
-/* Mobiel */
-
-.mobile-one {
-    grid-template-columns: 1rf;
-}
-
-.mobile-two {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.mobile-four {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-@media only screen and (max-width: 767.9px) {
-    .col.escape-tablet {
-        margin-left: -16px;
-        margin-right: -16px;
-    }
-}
-
-/* Tablet */
-
-@media only screen and (min-width: 768px) {
-    .tablet-one {
-        grid-template-columns: 1rf;
-    }
-
-    .tablet-two {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .tablet-four {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .col.escape-tablet {
-        margin-left: -16px;
-        margin-right: -16px;
-    }
-}
-
-/* Desktop*/
-
-@media only screen and (min-width: 1024px) {
-    .desktop-one {
-        grid-template-columns: 1fr;
-    }
-
-    .desktop-two {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .desktop-three {
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-
-    .desktop-four {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .desktop-two-uneven {
-        grid-template-columns: 33% 66%;
-
-    }
-
-    .col.desktop-order-2 {
-        order: 2;
-    }
-}
-
-.col.escape-desktop {
-    margin-left: -16px;
-    margin-right: -16px;
-}
-
-
-/* ------------------------- Basis styling ------------------------- */
-
-/* Algemeen */
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Greycliff-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: var(--black-light);
 }
 
 /* Opbouw */
@@ -159,7 +55,127 @@ section.no-space {
     text-align: center;
 }
 
+.padding-tb {
+    padding: 32px 0;
+}
+
+/* ------------------------- Responsive grid ------------------------- */
+
+/* Bron: https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
+.row {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+/* Mobiel > tot 767px */
+
+.mobile-one {
+    grid-template-columns: 1rf;
+}
+
+.mobile-two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mobile-four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 767px) {
+    .col.escape-tablet {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
+
+/* Tablet > van 768px tot 1023px */
+
+@media only screen and (min-width: 768px) {
+    .tablet-one {
+        grid-template-columns: 1rf;
+    }
+
+    .tablet-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tablet-four {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .col.escape-tablet {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
+
+/* Desktop > vanaf 1024px */
+
+@media only screen and (min-width: 1024px) {
+    .desktop-one {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .desktop-three {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .desktop-four {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .desktop-two-uneven {
+        grid-template-columns: 33% 66%;
+    }
+
+    .col.desktop-order-2 {
+        order: 2;
+    }
+}
+
+.col.escape-desktop {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+/* ------------------------- Basis styling ------------------------- */
+
+/* Kleuren */
+
+/* Bron: https://www.w3schools.com/css/css3_variables.asp */
+
+:root {
+    --black: #131313;
+    --black-light: #303030;
+    --red: #EA3D3D;
+    --red-light: #E96666;
+    --beige: #BBB4AF;
+    --beige-light: #F0EfEA;
+    --grey: #B9B9B4;
+    --grey-light: #F7F7F7;
+    --grey-border: #ACACAC;
+    --grey-border-light: #E0E0E0;
+    --green: #6CBC88;
+    --green-light: #F0EFEA;
+    --pink: #DC386A;
+    --pink-light: #F5729A;
+    --blue: #3B9FE2;
+    --white: #FFF;
+    --transparent-white: rgba(255, 255, 255, .8);
+}
+
 /* Typografie */
+
+/* Bron: https://css-tricks.com/typography-for-developers/ */
 
 @font-face {
     font-family: Greycliff-Bold;
@@ -185,17 +201,14 @@ section.no-space {
     src: url("../fonts/hamburg-ah-regular.woff2") format("woff2");
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Titels */
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-family: Greycliff-Bold;
 }
 
-h1 {
+h1.large {
     margin-bottom: 32px;
     font-size: 32px;
     line-height: 133%;
@@ -207,6 +220,7 @@ h2.large {
     line-height: 133%;
 }
 
+h1 small,
 h2.small {
     margin-bottom: 8px;
     font-size: 24px;
@@ -230,13 +244,26 @@ h3.small {
     letter-spacing: .2px;
 }
 
-.subtitle {
+.bold {
     font-family: Greycliff-Bold;
 }
+
+/* Body tekst */
 
 p {
     font-size: 16px;
     line-height: 150%;
+}
+
+/* List */
+
+ul.list {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+ul.list li {
+    margin: 8px 0;
 }
 
 /* Buttons */
@@ -265,6 +292,17 @@ p {
     border-color: var(--red-light);
 }
 
+.btn.secondary {
+    background-color: var(--pink);
+    border: 2px solid var(--pink);
+    color: var(--white);
+}
+
+.btn.secondary:hover {
+    background-color: var(--pink-light);
+    border-color: var(--pink-light);
+}
+
 /* Links */
 
 a {
@@ -273,11 +311,10 @@ a {
     border-bottom: 1px dotted #000;
 }
 
-
-#svg_arrow-right {
-    height: 20px;
-    width: 20px;
-    fill: var(--white);
+a.to-top {
+    text-align: right;
+    display: block;
+    border-bottom: 0;
 }
 
 /* Images */
@@ -286,31 +323,8 @@ img {
     width: 100%;
 }
 
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 16px;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-    color: white;
-}
+/* ------------------------- Menu Albert Heijn ------------------------- */
 
-/* List */
-
-ul.list {
-    font-size: 16px;
-    line-height: 150%;
-}
-
-ul.list li {
-    margin: 8px 0;
-}
-
-/* ------------------------- Albert Heijn menu ------------------------- */
 .site-header {
     height: 128px;
 }
@@ -320,7 +334,7 @@ ul.list li {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .nav-main {
@@ -337,6 +351,10 @@ ul.list li {
     height: 100%;
 }
 
+.nav-main-item a {
+    border-bottom: none;
+}
+
 .nav-main-item>a {
     display: flex;
 }
@@ -344,6 +362,14 @@ ul.list li {
 .nav-main-item .nav-img {
     height: 32px;
     width: 32px;
+}
+
+.nav-main-item.logo .nav-img {
+    margin-right: 16px;
+}
+
+.nav-main-item.logo .login {
+    color: var(--blue);
 }
 
 .nav-main-item.link-container,
@@ -354,10 +380,15 @@ ul.list li {
 .nav-main-item.shopping-cart .link-label,
 .nav-main-item.logo .link-icon {
     display: none;
+    color: var(--blue);
 }
 
+.nav-main-item .link-dropdown {
+    margin-left: 8px;
+}
 
 /* Desktop */
+
 @media only screen and (min-width: 1024px) {
     .nav-main-item {
         display: flex;
@@ -403,7 +434,6 @@ ul.list li {
 
     .nav-main-item .nav-link {
         padding: 8px 12px;
-
     }
 
     .nav-main-item a {
@@ -421,12 +451,10 @@ ul.list li {
         border: 1px solid #e0e0e0;
         border-radius: 4px;
     }
-
 }
 
-/* ------------------------- Allerhande menu ------------------------- */
+/* ------------------------- Menu Allerhande ------------------------- */
 
-/* Globaal */
 .sub-navigation-container {
     position: fixed;
     width: 100%;
@@ -435,12 +463,11 @@ ul.list li {
 }
 
 .nav-allerhande {
+    padding: 6px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 0;
-
 }
 
 .nav-allerhande .logo {
@@ -455,9 +482,8 @@ ul.list li {
 }
 
 .nav-allerhande .searchbar input {
+    padding: 16px 65px 16px 16px;
     width: 220px;
-    padding: 16px;
-    padding-right: 65px;
     border-radius: 8px;
 }
 
@@ -468,6 +494,7 @@ ul.list li {
 }
 
 .nav-allerhande .menu-toggle .icon {
+    margin-left: 8px;
     display: flex;
     width: 12px;
     height: 12px;
@@ -476,7 +503,6 @@ ul.list li {
     background-repeat: no-repeat;
     background-position: center;
     transition: all .2s linear;
-    margin-left: 8px;
 }
 
 .nav-allerhande .menu-toggle .icon img {
@@ -484,32 +510,30 @@ ul.list li {
 }
 
 .nav-allerhande .menu {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 0;
     overflow: hidden;
+    left: 0;
     transition: height .3s ease-in-out;
 }
 
 .site-header .overlay {
     position: fixed;
-    -webkit-transform: translateY(60px);
     transform: translateY(60px);
-
     background: rgba(48, 48, 48, .6);
 }
 
 .nav-allerhande .menu .menu-item {
-    list-style-type: none;
     padding: 12px 7px;
     width: 50%;
-    border-bottom: 1px solid var(--grey-border)
+    border-bottom: 1px solid var(--grey-border);
+    list-style-type: none;
 }
 
 .nav-allerhande .menu .menu-item.active a {
@@ -527,22 +551,23 @@ ul.list li {
 }
 
 .nav-allerhande .input-box {
-    width: 220px;
     height: 40px;
+    width: 220px;
 }
 
 .nav-allerhande .input-box .input-field {
-    width: calc(100% - 40px);
     height: 100%;
+    width: calc(100% - 40px);
 }
 
 .nav-allerhande .input-box .search-button {
-    width: 40px;
     height: 40px;
+    width: 40px;
     border: none;
 }
 
-/* Dark */
+/* Menu dark > homepage */
+
 .sub-navigation-container.dark {
     background-color: var(--black);
 }
@@ -568,8 +593,8 @@ ul.list li {
     background-image: url('../images/icons/icon-caret-down-white.svg');
 }
 
+/* Menu light > recept pagina */
 
-/* Light */
 .sub-navigation-container.light {
     background-color: var(--green-light);
 }
@@ -594,9 +619,11 @@ ul.list li {
     background-image: url('../images/icons/icon-caret-down.svg');
 }
 
+/* Menu toggle */
 
+/* Bron: https://dommagnifi.co/2016-05-16-basic-class-toggle-with-vanilla-js/ */
+/* Bron: https://stackoverflow.com/questions/52153424/how-to-use-event-listener-to-toggle-class-to-individual-list-item */
 
-/* Toggled navigation  */
 @media only screen and (max-width: 768px) {
 
     .site-header.toggled .sub-navigation-container .menu {
@@ -604,8 +631,8 @@ ul.list li {
     }
 
     .site-header.toggled .overlay {
-        width: 100%;
         height: 100vh;
+        width: 100%;
     }
 
     .site-header.toggled .nav-allerhande .menu-toggle .icon {
@@ -613,7 +640,6 @@ ul.list li {
     }
 }
 
-/* Tablet */
 @media only screen and (min-width: 768px) {
 
     .nav-allerhande .menu {
@@ -631,14 +657,12 @@ ul.list li {
 
     .nav-allerhande .menu {
         display: flex;
-        /* margin: 12px 8px; */
         height: auto;
     }
 
     .nav-allerhande .searchbar,
     .nav-allerhande .input-box {
         display: flex;
-
     }
 
     .sub-navigation-container.light .nav-allerhande .menu .menu-item.active {
@@ -730,22 +754,28 @@ ul.list li {
 
 /* Header */
 
+#home-header {
+    margin-bottom: 32px;
+}
+
 .banner {
     margin-top: 24px;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 100%), url(../images/homepage/allerhande-sint-kruidnoten.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    color: var(--white);
 }
 
 .banner .input-box {
-
-    width: 100%;
     height: 64px;
-}
-
-
-
-.banner .search-button {
-    border: none;
+    width: 100%;
 }
 
 .banner .input-box input {
@@ -753,10 +783,11 @@ ul.list li {
 }
 
 .banner .search-button {
-    width: 64px;
-    height: 64px;
     padding: 20px;
+    height: 64px;
+    width: 64px;
     background-color: var(--red);
+    border: none;
 }
 
 .banner .link {
@@ -770,12 +801,30 @@ ul.list li {
     border: none;
 }
 
+.banner .flow-link  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s ease-in-out;
+
+}
+
+.banner .flow-link:hover {
+    transform: translateX(4px);
+}
+
+.banner .flow-link img {
+    margin-left: 12px;
+    height: 20px;
+    width: auto;
+}
+
 .banner-logo {
     display: none;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .banner-logo .recipe-link {
     color: var(--white);
@@ -783,31 +832,31 @@ ul.list li {
 
 @media only screen and (min-width: 768px) {
     .banner {
-        padding-left: 64px;
-        padding-right: 64px;
         padding-top: 64px;
+        padding-right: 64px;
+        padding-left: 64px;
     }
 
     .banner .input-box {
-        width: 80%;
-        height: 88px;
         margin: auto;
+        height: 88px;
+        width: 80%;
     }
 
     .banner .search-button {
         padding: 28px;
-        width: 88px;
         height: 88px;
+        width: 88px;
     }
 
     .banner-logo {
-        display: flex;
         margin-top: 32px;
+        display: flex;
     }
 
     .banner .logo img {
-        width: 150px;
         height: 36px;
+        width: 150px;
     }
 }
 
@@ -825,13 +874,13 @@ ul.list li {
     }
 
     .banner .logo img {
-        width: 200px;
         height: 36px;
+        width: 200px;
     }
-
 }
 
 /* Content */
+
 .home-content {
     height: 250px;
 }
@@ -885,7 +934,7 @@ ul.list li {
 /* Links box */
 
 .link-box {
-    margin-top: 32px;
+    margin: 32px 0;
     padding: 16px;
     background-color: var(--grey-light);
 }
@@ -935,11 +984,47 @@ ul.list li {
 
 /* ------------------------- Recept pagina ------------------------- */
 
+/* Zoekbalk */
+
+.input-box {
+    font-family: 'Greycliff-Regular';
+    display: flex;
+    flex-flow: row;
+    border-radius: 4px;
+    overflow: hidden;
+    color: var(--grey);
+}
+
+.input-box input {
+    width: calc(100% - 64px);
+    height: 100%;
+    padding-left: 16px;
+    border: none;
+}
+
+/* Header */
+
+@media only screen and (max-width: 767px) {
+    #recept-header .subtitle {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h1.small {
+        margin-bottom: 8px;
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+
 /* Recept Hero */
 
 .hero-section {
     background-color: var(--beige-light);
 }
+
+/* Recept section */
 
 .recipe-container {
     position: relative;
@@ -959,7 +1044,6 @@ ul.list li {
 
     .recipe-container .recipe-hero {
         max-height: unset;
-
         position: absolute;
         top: 0;
         bottom: 0;
@@ -974,105 +1058,154 @@ ul.list li {
 }
 
 @media only screen and (min-width: 1024px) {
-
     .recipe-container {
         height: 560px;
     }
 }
 
-.recommended {
-    background-color: var(--green);
-    color: var(--white);
+/* Voedingswaarden */
+
+.food-info {
+    background-color: var(--beige-light);
 }
 
-.recommended h4 {
-    color: var(--white);
-}
-
-
-/* ------------------------- Recipe card box ------------------------- */
-
-.recipe-card {
-    padding: 16px;
-    margin-top: 24px;
-}
-
-.recipe-card .recipe-features {
-    list-style: none;
+.info-table {
+    margin: 00;
     padding: 0;
+    list-style-type: none;
 }
 
-.recipe-card .recipe-features .feature {
+.info-table li {
+    padding: 12px 0;
     display: flex;
-    flex-flow: row;
-    margin-bottom: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #B9B9B4;
 }
 
-.recipe-card .recipe-features .icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 12px;
-}
+/* Tags */
 
-.recipe-card .rating-container {
-    display: flex;
-    flex-flow: row;
-}
-
-.recipe-card .stars {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-}
-
-.recipe-card .stars .icon {
-    margin-right: 6px;
-}
-
-.recipe-card .stars .icon img {
-    width: 18px;
-    height: 18px;
-}
-
-.recipe-card .recipe-tags {
+.recipe-tags {
     margin-top: 12px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
 }
 
-.recipe-card .recipe-tags .tag {
-    display: inline-flex;
-    padding: 12px 16px;
-    background-color: var(--grey);
+.recipe-tags .tag {
     margin-right: 4px;
     margin-bottom: 4px;
+    padding: 12px 16px;
+    display: inline-flex;
+    background-color: var(--grey);
     color: var(--white);
     border-radius: 4px;
 }
 
+/* Aanbevolen recepten */
+
+.recommended {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.recommended .recipe a {
+    border-bottom: none;
+}
+
+.recommended h4 {
+    color: var(--white);
+}
+
+/* ------------------------- Recept box ------------------------- */
+
+.recipe-box {
+    padding: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .recipe-box {
+        padding: 0 0 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .recipe-box {
+        margin-top: 24px;
+        padding: 16px;
+    }
+}
+
+.recipe-box .recipe-features {
+    padding: 0;
+    list-style: none;
+}
+
+.recipe-box .recipe-features .feature {
+    margin-bottom: 16px;
+    display: flex;
+    flex-flow: row;
+}
+
+.recipe-box .recipe-features .icon {
+    margin-right: 12px;
+    height: 14px;
+    width: 14px;
+}
+
+.recipe-box .rating-container {
+    margin: 24px 0;
+    display: flex;
+    flex-flow: row;
+}
+
+.recipe-box .stars {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.recipe-box .stars .icon {
+    margin-right: 6px;
+}
+
+.recipe-box .stars .icon img {
+    height: 18px;
+    width: 18px;
+}
+
 @media only screen and (min-width: 786px) {
-    .recipe-card {
+    .recipe-box {
         max-width: 276px;
         background-color: var(--transparent-white);
     }
 }
 
-/* ------------------------- input box with button ------------------------- */
-.input-box {
-    font-family: 'Greycliff-Regular';
-    display: flex;
-    flex-flow: row;
-    border-radius: 4px;
-    overflow: hidden;
-    color: var(--grey);
+/* ------------------------- Ingrediënten ------------------------- */
+
+#checklist {
+    margin: 24px 0 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.input-box input {
-    width: calc(100% - 64px);
-    height: 100%;
-    padding-left: 16px;
-    border: none;
+@media only screen and (max-width: 767px) {
+    #checklist {
+        margin-bottom: 32px;
+    }
+}
+
+#checklist li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #B9B9B4;
+}
+
+#checklist li:first-child {
+    border-top: 1px dashed #B9B9B4;
+}
+
+#checklist li span {
+    margin-left: 8px;
 }
 
 /* ------------------------- Footer ------------------------- */
@@ -1103,7 +1236,7 @@ footer li a {
 }
 
 footer li a:hover {
-    color: #3b9fe2;
+    color: var(--blue);
 }
 
 footer .site-link {

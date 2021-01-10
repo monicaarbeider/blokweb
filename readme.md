@@ -10,9 +10,11 @@
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. [Bron 1: Responsive grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+2. [Bron 2: Variabelen CSS](https://www.w3schools.com/css/css3_variables.asp)
+3. [Bron 3: Fonts inladen](https://css-tricks.com/typography-for-developers/)
+4. [Bron 4: Class toggle 1](https://dommagnifi.co/2016-05-16-basic-class-toggle-with-vanilla-js/)
+5. [Bron 5: Class toggle 2](https://dommagnifi.co/2016-05-16-basic-class-toggle-with-vanilla-js/)
 
 
 
@@ -47,20 +49,6 @@
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
 
 
 

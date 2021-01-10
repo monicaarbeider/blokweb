@@ -12,108 +12,120 @@
 </head>
 
 <body>
+    <!-- Begin menu -->
     <header class="site-header" id="toggle-menu">
+        <!-- Begin menu Albert Heijn -->
         <div class="main-navigation-container">
             <div class="container">
                 <nav class="nav-main">
-
                     <div class="nav-main-item mobile-toggle">
                         <a href="#">
                             <span class="nav-img">
-                                <img src="./images/icons/icon-bars.svg" alt="">
+                                <img src="./images/icons/icon-bars.svg" alt="Menu">
                             </span>
                         </a>
                     </div>
+
                     <div class="nav-main-item logo">
                         <span class="nav-img">
-                            <img src="./images/logo/logo-ah.svg" alt="">
+                            <img src="./images/logo/logo-ah.svg" alt="Logo Albert Heijn">
                         </span>
+
                         <div class="link-icon login">
                             <span class="label">
                                 Inloggen
                             </span>
+
                             <span class="icon link-dropdown">
-                                <img src="./images/icons/chevron-down.svg" alt="">
+                                <img src="./images/icons/icon-chevron-down-blue.svg" alt="Dropdown">
                             </span>
                         </div>
                     </div>
-                    <div class="nav-main-item link-container">
 
+                    <div class="nav-main-item link-container">
                         <span class="nav-link">
                             <a href="#">Producten</a>
                         </span>
+
                         <span class="nav-link">
                             <a href="#">Bonus</a>
-
                         </span>
+
                         <span class="nav-link">
                             <a href="#">Recepten</a>
-
                         </span>
+
                         <span class="nav-link">
                             <a href="#">Acties</a>
                         </span>
+
                         <span class="nav-link icon">
                             <a href="#">Meer
                                 <span class="icon link-dropdown"></span>
                             </a>
                         </span>
                     </div>
+
                     <div class="nav-main-item searchbar">
                         <input aria-label="Zoeken" value="" placeholder="Zoeken" class="search-input">
                     </div>
+
                     <div class="nav-main-item shopping-cart">
                         <a href="#">
                             <span class="link-label">Online Bestellen</span>
                             <span class="nav-img">
-                                <img src="./images/icons/icon-cart.svg" alt="">
+                                <img src="./images/icons/icon-cart.svg" alt="Winkelwagen">
                             </span>
                         </a>
                     </div>
                 </nav>
             </div>
         </div>
-        <div class="sub-navigation-container dark">
+        <!-- Einde menu Albert Heijn -->
 
+        <!-- Begin menu Allerhande -->
+        <div class="sub-navigation-container dark">
             <div class="container medium">
                 <nav class="nav-allerhande ">
-
                     <a href="/">
                         <img class="logo" src="./images/logo/logo-allerhande-wit.svg" alt="Allerhande logo">
                     </a>
+
                     <ul class="menu" role="menu">
                         <li class="menu-item active">
                             <a href="/allerhande" class="" aria-label="Recepten" role="menuitem">
                                 <span class="">Recepten</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/" class="" aria-label="Video's" role="menuitem">
                                 <span class="">Video's</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/" class="" aria-label="Thema's" role="menuitem">
                                 <span class="">Thema's</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/allerhande/favorieten" class="" aria-label="Mijn recepten" role="menuitem">
                                 <span>Mijn recepten</span>
                             </a>
                         </li>
+
                         <li class="menu-item">
                             <a href="/allerhande/allerhandekids" class="" aria-label="Kids" role="menuitem">
                                 <span class="label">Kids</span>
                             </a>
                         </li>
                     </ul>
+
                     <div class="menu-toggle" id="allerhande-menu-toggle">
-                        <span class="label">
-                            Overzicht
-                        </span>
-                        <span class="icon link-more">
-                        </span>
+                        <span class="label">Overzicht</span>
+                        <span class="icon link-more"></span>
                     </div>
 
                     <div class="searchbar">
@@ -122,27 +134,33 @@
                 </nav>
             </div>
         </div>
+        <!-- Einde menu Allerhande -->
+
+        <!-- Begin mobiele overlay -->
         <span class="overlay" id="overlay-toggle"></span>
-
+        <!-- Einde mobiele overlay -->
     </header>
+    <!-- Einde menu -->
 
+    <!-- Begin homepagina inhoud -->
     <main>
+        <!-- Begin homepagina header -->
         <section id="home-header" class="align-center">
             <div class="container medium">
                 <div class="row">
                     <div class="banner">
-                        <h1>Vind makkelijk het beste recept</h1>
+                        <h1 class="large">Vind makkelijk het beste recept</h1>
                         <div class="input-box">
                             <input class="input-field" placeholder="Typ hier" type="text">
                             <button class="search-button">
                                 <img class="icon" src="./images/icons/icon-search.svg" alt="zoeken">
                             </button>
                         </div>
-                        <a class="link" href="">Bekijk alle recepten <svg id="svg_arrow-right" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" fill="fff"
-                                    d="M14.261 7.118l2.771 3.045a.5.5 0 01-.369.837H3v2h13.606a.5.5 0 01.374.832L14.253 16.9l1.494 1.33 5-5.626a1 1 0 00-.007-1.338l-5-5.494-1.479 1.347z"
-                                    clip-rule="evenodd"></path>
-                            </svg></a>
+
+                        <a href="" class="link flow-link">
+                            Bekijk alle recepten
+                            <img src="./images/icons/icon-arrow-right.svg" alt="pijl">
+                        </a>
 
                         <div class="banner-logo">
                             <span class="logo">
@@ -158,14 +176,16 @@
                 </div>
             </div>
         </section>
+        <!-- Einde homepagina header -->
 
-        <section class="align-center">
+        <!-- Begin recepten gezond -->
+        <section class="align-center padding-tb">
             <div class="container">
                 <h2 class="large">Wat eten we vandaag?</h2>
-                <span class="subtitle">Lekker makkelijk!</span>
+                <span class="subtitle bold">Lekker gezond!</span>
 
                 <div class="row sidescroll desktop-four">
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="/recept.html" class="card-recipe">
                             <div class="header">
@@ -195,9 +215,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -222,9 +242,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -254,9 +274,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -286,9 +306,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -313,9 +333,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -340,9 +360,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -372,9 +392,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -404,19 +424,21 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
                 </div>
 
                 <a class="btn primary" href="">meer recepten</a>
             </div>
         </section>
+        <!-- Einde recepten gezond -->
 
-        <section class="align-center">
+        <!-- Begin recepten sint -->
+        <section class="align-center padding-tb">
             <div class="container">
                 <h2 class="large">Sint aan de bak!</h2>
 
                 <div class="row sidescroll desktop-four">
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -446,9 +468,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -478,9 +500,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -510,9 +532,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -542,13 +564,15 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
                 </div>
 
                 <a class="btn primary" href="">meer recepten</a>
             </div>
         </section>
+        <!-- Einde recepten sint -->
 
+        <!-- Begin info magazine -->
         <section>
             <div class="container">
                 <div class="row desktop-two">
@@ -558,9 +582,7 @@
 
                     <div class="col">
                         <h2 class="small">Nu in het magazine</h2>
-                        <p>Bergen suikergoed en marsepein! En voor al die heerlijke avondjes fijne variaties op de
-                            klassiekers stamppot en gourmet. Dat wordt lekker uitpakken. Kijk maar eens naar al het
-                            lekkers in Allerhande deze maand.</p>
+                        <p>Bergen suikergoed en marsepein! En voor al die heerlijke avondjes fijne variaties op de klassiekers stamppot en gourmet. Dat wordt lekker uitpakken. Kijk maar eens naar al het lekkers in Allerhande deze maand.</p>
 
                         <ul class="list">
                             <li><a href="">Alle recepten</a></li>
@@ -574,7 +596,9 @@
                 </div>
             </div>
         </section>
+        <!-- Einde info magazine -->
 
+        <!-- Begin inspiratie gourmet -->
         <section>
             <div class="container">
                 <div class="row desktop-two">
@@ -584,8 +608,7 @@
 
                     <div class="col">
                         <h2 class="small">Kleine pannetjes, groot geluk!</h2>
-                        <p>We gaan weer ouderwets gezellig gourmetten. Met hartige én zoete gerechtjes die iedereen kan
-                            maken. Met het <a href="">gourmet-boodschappenlijstje van AH</a> en/of helemaal zelfgemaakt
+                        <p>We gaan weer ouderwets gezellig gourmetten. Met hartige én zoete gerechtjes die iedereen kan maken. Met het <a href="">gourmet-boodschappenlijstje van AH</a> en/of helemaal zelfgemaakt
                         </p>
 
                         <ul class="list">
@@ -599,13 +622,15 @@
                 </div>
             </div>
         </section>
+         <!-- Einde inspiratie gourmet -->
 
-        <section class="align-center">
+        <!-- Begin recepten kerst -->
+        <section class="align-center padding-tb">
             <div class="container">
                 <h2 class="large">Bijna kerst!</h2>
 
                 <div class="row sidescroll desktop-four">
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -634,9 +659,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -666,9 +691,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -698,9 +723,9 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
 
-                    <!-- begin recept card -->
+                    <!-- Begin recept card -->
                     <div class="col">
                         <a href="" class="card-recipe">
                             <div class="header">
@@ -730,13 +755,15 @@
                             </div>
                         </a>
                     </div>
-                    <!-- einde recept card -->
+                    <!-- Einde recept card -->
                 </div>
 
                 <a class="btn primary" href="">meer recepten</a>
             </div>
         </section>
+        <!-- Einde recepten kerst -->
 
+        <!-- Begin recept collage -->
         <section>
             <div class="container small">
                 <div class="row mobile-one desktop-one">
@@ -773,12 +800,14 @@
                 </div>
             </div>
         </section>
+        <!-- Einde recept collage -->
 
+        <!-- Begin website links -->
         <section>
             <div class="container">
                 <div class="row link-box mobile-one tablet-two desktop-four">
 
-                    <!-- begin link categorie -->
+                    <!-- Begin link categorie -->
                     <div class="col">
                         <div class="header">
                             <h3 class="large">Nu in het magazine</h3>
@@ -811,9 +840,9 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- einde link categorie -->
+                    <!-- Einde link categorie -->
 
-                    <!-- begin link categorie -->
+                    <!-- Begin link categorie -->
                     <div class="col">
                         <div class="header">
                             <h3 class="large">Gezonde maand</h3>
@@ -841,9 +870,9 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- einde link categorie -->
+                    <!-- Einde link categorie -->
 
-                    <!-- begin link categorie -->
+                    <!-- Begin link categorie -->
                     <div class="col">
                         <div class="header">
                             <h3 class="large">Goede voornemens</h3>
@@ -876,9 +905,9 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- einde link categorie -->
+                    <!-- Einde link categorie -->
 
-                    <!-- begin link categorie -->
+                    <!-- Begin link categorie -->
                     <div class="col">
                         <div class="header">
                             <h3 class="large">Voor doordeweeks</h3>
@@ -911,17 +940,20 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- einde link categorie -->
+                    <!-- Einde link categorie -->
                 </div>
             </div>
         </section>
+        <!-- Einde website links -->
     </main>
+    <!-- Einde homepage inhoud -->
 
+    <!-- Begin footer -->
     <footer>
         <div class="container medium">
+            <!-- Begin footer links -->
             <div class="row mobile-two tablet-four desktop-four">
-
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Nu populair</h3>
@@ -941,9 +973,9 @@
                         <li><a href="" class="site-link">Pasta</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
 
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Allerhande</h3>
@@ -960,9 +992,9 @@
                         <li><a href="" class="site-link">Over Allerhande</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
 
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Boodschappen</h3>
@@ -982,9 +1014,9 @@
                         <li><a href="" class="site-link">AH Bezorgbundel</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
 
-                <!-- begin site-link categorie -->
+                <!-- Begin site-link categorie -->
                 <div class="col">
                     <div class="header">
                         <h3 class="small">Albert Heijn</h3>
@@ -1003,19 +1035,21 @@
                         <li><a href="" class="site-link">Duurzaam</a></li>
                     </ul>
                 </div>
-                <!-- einde site-link categorie -->
+                <!-- Einde site-link categorie -->
             </div>
+            <!-- Einde footer links -->
 
+            <!-- Begin footer balk -->
             <div class="footer-balk">
                 <div class="contact divider">
                     <div class="social-media">
-                        <a href=""><img src="./images/icons/icon-facebook-beige.svg" alt=""></a>
-                        <a href=""><img src="./images/icons/icon-twitter-beige.svg" alt=""></a>
-                        <a href=""><img src="./images/icons/icon-instagram-beige.svg" alt=""></a>
+                        <a href=""><img src="./images/icons/icon-facebook-beige.svg" alt="Icoon Facebook"></a>
+                        <a href=""><img src="./images/icons/icon-twitter-beige.svg" alt="Icoon Twitter"></a>
+                        <a href=""><img src="./images/icons/icon-instagram-beige.svg" alt="Icoon Instagram"></a>
                     </div>
 
                     <div class="logo">
-                        <img src="./images/logo/logo-ah.svg" alt="">
+                        <img src="./images/logo/logo-ah.svg" alt="Logo Albert Heijn">
                     </div>
                 </div>
 
@@ -1029,11 +1063,14 @@
                         <li><a href="" class="site-link">Kwetsbaarheid melden</a></li>
                     </ul>
                 </div>
+                <!-- Einde footer balk -->
             </div>
 
         </div>
     </footer>
+    <!-- Einde footer -->
 
+    <!-- Javascript bestand -->
     <script src="scripts/script.js"></script>
 </body>
 
