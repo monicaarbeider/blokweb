@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Monica Arbeider">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Allerhande</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header" id="toggle-menu">
+        <div class="main-navigation-container">
+            <div class="container">
+                <nav class="nav-main">
+
+                    <div class="nav-main-item mobile-toggle">
+                        <a href="#">
+                            <span class="nav-img">
+                                <img src="./images/icons/icon-bars.svg" alt="">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="nav-main-item logo">
+                        <span class="nav-img">
+                            <img src="./images/logo/logo-ah.svg" alt="">
+                        </span>
+                        <div class="link-icon login">
+                            <span class="label">
+                                Inloggen
+                            </span>
+                            <span class="icon link-dropdown">
+                                <img src="./images/icons/chevron-down.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="nav-main-item link-container">
+
+                        <span class="nav-link">
+                            <a href="#">Producten</a>
+                        </span>
+                        <span class="nav-link">
+                            <a href="#">Bonus</a>
+
+                        </span>
+                        <span class="nav-link">
+                            <a href="#">Recepten</a>
+
+                        </span>
+                        <span class="nav-link">
+                            <a href="#">Acties</a>
+                        </span>
+                        <span class="nav-link icon">
+                            <a href="#">Meer
+                                <span class="icon link-dropdown"></span>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="nav-main-item searchbar">
+                        <input aria-label="Zoeken" value="" placeholder="Zoeken" class="search-input">
+                    </div>
+                    <div class="nav-main-item shopping-cart">
+                        <a href="#">
+                            <span class="link-label">Online Bestellen</span>
+                            <span class="nav-img">
+                                <img src="./images/icons/icon-cart.svg" alt="">
+                            </span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="sub-navigation-container dark">
+
+            <div class="container medium">
+                <nav class="nav-allerhande ">
+
+                    <a href="/">
+                        <img class="logo" src="./images/logo/logo-allerhande-wit.svg" alt="Allerhande logo">
+                    </a>
+                    <ul class="menu" role="menu">
+                        <li class="menu-item active">
+                            <a href="/allerhande" class="" aria-label="Recepten" role="menuitem">
+                                <span class="">Recepten</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/" class="" aria-label="Video's" role="menuitem">
+                                <span class="">Video's</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/" class="" aria-label="Thema's" role="menuitem">
+                                <span class="">Thema's</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/allerhande/favorieten" class="" aria-label="Mijn recepten" role="menuitem">
+                                <span>Mijn recepten</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/allerhande/allerhandekids" class="" aria-label="Kids" role="menuitem">
+                                <span class="label">Kids</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu-toggle" id="allerhande-menu-toggle">
+                        <span class="label">
+                            Overzicht
+                        </span>
+                        <span class="icon link-more">
+                        </span>
+                    </div>
+
+                    <div class="searchbar">
+                        <input type="text" placeholder="Vind een recept">
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <span class="overlay" id="overlay-toggle"></span>
+
+    </header>
+
+    <main>
+        <section id="home-header" class="align-center">
+            <div class="container medium">
+                <div class="row">
+                    <div class="banner">
+                        <h1>Vind makkelijk het beste recept</h1>
+                        <div class="input-box">
+                            <input class="input-field" placeholder="Typ hier" type="text">
+                            <button class="search-button">
+                                <img class="icon" src="./images/icons/icon-search.svg" alt="zoeken">
+                            </button>
+                        </div>
+                        <a class="link" href="">Bekijk alle recepten <svg id="svg_arrow-right" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" fill="fff"
+                                    d="M14.261 7.118l2.771 3.045a.5.5 0 01-.369.837H3v2h13.606a.5.5 0 01.374.832L14.253 16.9l1.494 1.33 5-5.626a1 1 0 00-.007-1.338l-5-5.494-1.479 1.347z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a>
+
+                        <div class="banner-logo">
+                            <span class="logo">
+                                <img class="logo" src="./images/logo/logo-allerhande-wit.svg" alt="Allerhande logo">
+                            </span>
+                            <a href="" class="recipe-link">
+                                <span class="title">Recept -</span>
+                                <span class="info">Kruidnoten</span>
+                                <img src="./images/icons/icon-chevron-right-white.svg" alt="pijl">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="align-center">
+            <div class="container">
+                <h2 class="large">Wat eten we vandaag?</h2>
+                <span class="subtitle">Lekker makkelijk!</span>
+
+                <div class="row sidescroll desktop-four">
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="/recept.html" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-volkorenpasta-kip.jpg"
+                                    alt="Volkorenpasta met kip" title="Volkorenpasta met kip">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>30 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>650 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-people.svg" alt="personen">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Volkoren pasta met kip, Chinese kool, gember en tahin
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-gezonde-chili.jpg"
+                                    alt="Gezonde chili con carne" title="Gezonde chili con carne">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>25 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>525 kcal</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Gezonde chili con carne
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-broccoli-vis.jpg" alt="Broccoli met vis"
+                                    title="Broccoli met vis">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>15 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>475 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-people.svg" alt="personen">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Geroosterde broccoli met kabeljauw en groenten
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-traybake-zalm.jpg" alt="Traybake met zalm"
+                                    title="Traybake met zalm">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>15 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>510 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-people.svg" alt="personen">
+                                    <span>2</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Traybake met zalm, aardappel en rode ui
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-soep-wortel.jpg" alt="Wortelsoep"
+                                    title="Wortelsoep">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>25 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>205 kcal</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Wortelsoep met kruiden-croutons
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-gezonde-snacks.jpg" alt="Gezonde snacks"
+                                    title="Gezonde snacks">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>15 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>45 kcal</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Gezonde snacks van courgette-bruschetta met tomatensalsa
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-mozzarella-kip.jpg" alt="Mozzarella met kip"
+                                    title="Mozzarella met kip">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>30 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>615 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-people.svg" alt="personen">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Mozzarella-kipfilet met prei-aardappelpuree
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/gezond/recept-aardappelschotel-tonijn.jpg"
+                                    alt="Aardappelschotel met tonijn" title="Aardappelschotel met tonijn">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>30 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>520 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-people.svg" alt="personen">
+                                    <span>2</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Zoete-aardappelschotel met tonijn en sperziebonen
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+                </div>
+
+                <a class="btn primary" href="">meer recepten</a>
+            </div>
+        </section>
+
+        <section class="align-center">
+            <div class="container">
+                <h2 class="large">Sint aan de bak!</h2>
+
+                <div class="row sidescroll desktop-four">
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/sint/recept-cheesecake-kruidnoten.jpg"
+                                    alt="Cheesecake met kruidnoten" title="Cheesecake met kruidnoten">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>15 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>585 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>5</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Cheesecake met kruidnoten en mandarijn glazuur
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/sint/recept-chocoladeletter.jpg" alt="Chocoladeletters"
+                                    title="Chocoladeletters">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>25 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>1045 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Chocoladeletters
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/sint/recept-hartige-banketletter.jpg"
+                                    alt="Hartige banketletter" title="Hartige banketletter">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>20 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>250 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>3</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Hartige banketletter (banketstaaf)
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/sint/recept-speculaastiramisu.jpg" alt="Speculaastiramisu"
+                                    title="Speculaastiramisu">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>15 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>348 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Speculaastiramisu
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+                </div>
+
+                <a class="btn primary" href="">meer recepten</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row desktop-two">
+                    <div class="col escape-tablet home-content">
+                        <img src="./images/homepage/allerhande-sint-suikergoed.jpg" alt="Sinterklaas in het magazine" title="Sinterklaas in het magazine">
+                    </div>
+
+                    <div class="col">
+                        <h2 class="small">Nu in het magazine</h2>
+                        <p>Bergen suikergoed en marsepein! En voor al die heerlijke avondjes fijne variaties op de
+                            klassiekers stamppot en gourmet. Dat wordt lekker uitpakken. Kijk maar eens naar al het
+                            lekkers in Allerhande deze maand.</p>
+
+                        <ul class="list">
+                            <li><a href="">Alle recepten</a></li>
+                            <li>Bekijk het <a href="">magazine online</a></li>
+                            <li><a href="">Sintrecepten</a></li>
+                            <li><a href="">Borrel</a></li>
+                            <li><a href="">Gourmet</a></li>
+                            <li><a href="">Stamppot</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row desktop-two">
+                    <div class="col escape-tablet home-content desktop-order-2">
+                        <img src="./images/homepage/allerhande-sint-gourmet.jpg" alt="Gourmet inspiratie" title="Gourmet inspiratie">
+                    </div>
+
+                    <div class="col">
+                        <h2 class="small">Kleine pannetjes, groot geluk!</h2>
+                        <p>We gaan weer ouderwets gezellig gourmetten. Met hartige én zoete gerechtjes die iedereen kan
+                            maken. Met het <a href="">gourmet-boodschappenlijstje van AH</a> en/of helemaal zelfgemaakt
+                        </p>
+
+                        <ul class="list">
+                            <li><a href="">Mac and cheese</a></li>
+                            <li><a href="">Mini rösti</a></li>
+                            <li><a href="">Marshmallow met bananensplit</a></li>
+                        </ul>
+
+                        <p>Smaakt naar meer? Je vindt al onze <a href="">gourmet recepten hier</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="align-center">
+            <div class="container">
+                <h2 class="large">Bijna kerst!</h2>
+
+                <div class="row sidescroll desktop-four">
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/kerst/recept-mini-trifles.jpg" alt="Mini-trifles" title="Mini-trifles">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>60 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>530 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Mini-trifles met amandelkoekjes, bessencrème en honeycomb
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/kerst/recept-kerstboom-pizza.jpg" alt="Kerstboompizza"
+                                    title="Kerstboompizza">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>15 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>495 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>5</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Kerstboompizza
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/kerst/recept-ragout-pasteitjes.jpg" alt="Ragoutpasteitjes"
+                                    title="Ragoutpasteitjes">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>25 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>400 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Ragoutpasteitjes
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+
+                    <!-- begin recept card -->
+                    <div class="col">
+                        <a href="" class="card-recipe">
+                            <div class="header">
+                                <img src="./images/recipes/kerst/recept-garnalencocktail.jpg" alt="Garnalencocktail"
+                                    title="Garnalencocktail">
+                            </div>
+
+                            <ul class="info">
+                                <li>
+                                    <img src="./images/icons/icon-clock.svg" alt="tijd">
+                                    <span>20 min</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-kcal.svg" alt="aantal kcal">
+                                    <span>425 kcal</span>
+                                </li>
+
+                                <li>
+                                    <img src="./images/icons/icon-star.svg" alt="beoordeling">
+                                    <span>4</span>
+                                </li>
+                            </ul>
+
+                            <div class="footer">
+                                Garnalencocktail met limoenmayonaise en sesamtoast
+                            </div>
+                        </a>
+                    </div>
+                    <!-- einde recept card -->
+                </div>
+
+                <a class="btn primary" href="">meer recepten</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container small">
+                <div class="row mobile-one desktop-one">
+                    <div class="col">
+                        <img src="./images/homepage/allerhande-kerst-creme-brulee.jpg" alt="Crème brûlée"
+                            title="Crème brûlée">
+                        <a href="" class="recipe-link">
+                            <span class="title">Recept -</span>
+                            <span class="info">Crème brûlée van kokos</span>
+                            <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mobile-one desktop-two">
+                    <div class="col">
+                        <img src="./images/homepage/allerhande-kerst-carpaccio.jpg" alt="Carpaccio" title="Carpaccio">
+                        <a href="" class="recipe-link">
+                            <span class="title">Recept -</span>
+                            <span class="info">Carpaccio met Parmezaanse kaas</span>
+                            <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <img src="./images/homepage/allerhande-kerst-pompoen.jpg" alt="Gevulde pompoen"
+                            title="Gevulde pompoen">
+                        <a href="" class="recipe-link">
+                            <span class="title">Recept -</span>
+                            <span class="info">Gevulde pompoen met cranberry</span>
+                            <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row link-box mobile-one tablet-two desktop-four">
+
+                    <!-- begin link categorie -->
+                    <div class="col">
+                        <div class="header">
+                            <h3 class="large">Nu in het magazine</h3>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Alle nieuwe recepten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Bekijk het magazine online</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Beter eten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Goedkoop gezond eten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Allerhande kids</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- einde link categorie -->
+
+                    <!-- begin link categorie -->
+                    <div class="col">
+                        <div class="header">
+                            <h3 class="large">Gezonde maand</h3>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Swap je carbs</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Verstopte groenten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Recepten met rodekool</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Recepten met prei</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- einde link categorie -->
+
+                    <!-- begin link categorie -->
+                    <div class="col">
+                        <div class="header">
+                            <h3 class="large">Goede voornemens</h3>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Gezonde recepten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Koolydraatarme recepten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Slanke recepten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Vegetarisch</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Veganuary</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- einde link categorie -->
+
+                    <!-- begin link categorie -->
+                    <div class="col">
+                        <div class="header">
+                            <h3 class="large">Voor doordeweeks</h3>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Wat eten we vandaag?</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Snelle recepten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">5-ingrediënten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Gezonde recepten</a>
+                            </li>
+
+                            <li>
+                                <img src="./images/icons/icon-chevron-right.svg" alt="aantal kcal">
+                                <a href="" class="page-link">Budgetrecepten</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- einde link categorie -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container medium">
+            <div class="row mobile-two tablet-four desktop-four">
+
+                <!-- begin site-link categorie -->
+                <div class="col">
+                    <div class="header">
+                        <h3 class="small">Nu populair</h3>
+                    </div>
+
+                    <ul>
+                        <li><a href="" class="site-link">Oud & nieuw recepten</a></li>
+                        <li><a href="" class="site-link">Wat eten we vandaag</a></li>
+                        <li><a href="" class="site-link">Gezonde recepten</a></li>
+                        <li><a href="" class="site-link">Snelle recepten</a></li>
+                        <li><a href="" class="site-link">Recepten met 5 ingrediënten</a></li>
+                        <li><a href="" class="site-link">Budgetrecepten</a></li>
+                        <li><a href="" class="site-link">Vegetarische recepten</a></li>
+                        <li><a href="" class="site-link">Kolhydraatarme recepten</a></li>
+                        <li><a href="" class="site-link">Glutenvrije recepten</a></li>
+                        <li><a href="" class="site-link">Bananenbrood</a></li>
+                        <li><a href="" class="site-link">Pasta</a></li>
+                    </ul>
+                </div>
+                <!-- einde site-link categorie -->
+
+                <!-- begin site-link categorie -->
+                <div class="col">
+                    <div class="header">
+                        <h3 class="small">Allerhande</h3>
+                    </div>
+
+                    <ul>
+                        <li><a href="" class="site-link">Recepten</a></li>
+                        <li><a href="" class="site-link">Allerhande box</a></li>
+                        <li><a href="" class="site-link">Video's</a></li>
+                        <li><a href="" class="site-link">Thema's</a></li>
+                        <li><a href="" class="site-link">Mijn recepten</a></li>
+                        <li><a href="" class="site-link">Kids</a></li>
+                        <li><a href="" class="site-link">Magazine app</a></li>
+                        <li><a href="" class="site-link">Over Allerhande</a></li>
+                    </ul>
+                </div>
+                <!-- einde site-link categorie -->
+
+                <!-- begin site-link categorie -->
+                <div class="col">
+                    <div class="header">
+                        <h3 class="small">Boodschappen</h3>
+                    </div>
+
+                    <ul>
+                        <li><a href="" class="site-link">Producten</a></li>
+                        <li><a href="" class="site-link">Merken</a></li>
+                        <li><a href="" class="site-link">Bonus</a></li>
+                        <li><a href="" class="site-link">Winkels</a></li>
+                        <li><a href="" class="site-link">Online bestellen</a></li>
+                        <li><a href="" class="site-link">Bezorgservice</a></li>
+                        <li><a href="" class="site-link">Pick up points</a></li>
+                        <li><a href="" class="site-link">Zakelijk</a></li>
+                        <li><a href="" class="site-link">Albert Heijn app</a></li>
+                        <li><a href="" class="site-link">Wijnvinder</a></li>
+                        <li><a href="" class="site-link">AH Bezorgbundel</a></li>
+                    </ul>
+                </div>
+                <!-- einde site-link categorie -->
+
+                <!-- begin site-link categorie -->
+                <div class="col">
+                    <div class="header">
+                        <h3 class="small">Albert Heijn</h3>
+                    </div>
+
+                    <ul>
+                        <li><a href="" class="site-link">Klantenservice</a></li>
+                        <li><a href="" class="site-link">Mijn ah.nl</a></li>
+                        <li><a href="" class="site-link">Acties</a></li>
+                        <li><a href="" class="site-link">Nieuwsbrief</a></li>
+                        <li><a href="" class="site-link">Adverteren</a></li>
+                        <li><a href="" class="site-link">Pers</a></li>
+                        <li><a href="" class="site-link">Over AH</a></li>
+                        <li><a href="" class="site-link">Werken bij AH</a></li>
+                        <li><a href="" class="site-link">Kwaliteitsgarantie</a></li>
+                        <li><a href="" class="site-link">Duurzaam</a></li>
+                    </ul>
+                </div>
+                <!-- einde site-link categorie -->
+            </div>
+
+            <div class="footer-balk">
+                <div class="contact divider">
+                    <div class="social-media">
+                        <a href=""><img src="./images/icons/icon-facebook-beige.svg" alt=""></a>
+                        <a href=""><img src="./images/icons/icon-twitter-beige.svg" alt=""></a>
+                        <a href=""><img src="./images/icons/icon-instagram-beige.svg" alt=""></a>
+                    </div>
+
+                    <div class="logo">
+                        <img src="./images/logo/logo-ah.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="company">
+                    <ul>
+                        <li><a href="" class="site-link">Algemene voorwaarden</a></li>
+                        <li><a href="" class="site-link">Bonusvoorwaarden</a></li>
+                        <li><a href="" class="site-link">Privacybeleid</a></li>
+                        <li><a href="" class="site-link">Cookiebeleid</a></li>
+                        <li><a href="" class="site-link">Over AH</a></li>
+                        <li><a href="" class="site-link">Kwetsbaarheid melden</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

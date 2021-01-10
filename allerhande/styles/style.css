@@ -1,0 +1,1159 @@
+/* ------------------------- Variabelen ------------------------- */
+
+/* Kleuren */
+
+:root {
+    --black: #131313;
+    --black-light: #303030;
+    --white: #FFF;
+    --red: #EA3D3D;
+    --red-light: #E96666;
+    --beige: #BBB4AF;
+    --beige-light: #F0EfEA;
+    --grey: #B9B9B4;
+    --grey-light: #F7F7F7;
+    --grey-border: #acacac;
+    --grey-border-light: #E0E0E0;
+    --green: #6cbc88;
+    --green-light: #f0efea;
+    --transparent-white: rgba(255, 255, 255, .8);
+    scroll-behavior: smooth;
+}
+
+/* ------------------------- Responsive grid ------------------------- */
+
+.container {
+    padding: 0 16px;
+    width: 100%;
+    max-width: 1488px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container.small {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container.medium {
+        max-width: 1150px;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+
+/* Mobiel */
+
+.mobile-one {
+    grid-template-columns: 1rf;
+}
+
+.mobile-two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mobile-four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 767.9px) {
+    .col.escape-tablet {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+    .tablet-one {
+        grid-template-columns: 1rf;
+    }
+
+    .tablet-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tablet-four {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .col.escape-tablet {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
+
+/* Desktop*/
+
+@media only screen and (min-width: 1024px) {
+    .desktop-one {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .desktop-three {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .desktop-four {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .desktop-two-uneven {
+        grid-template-columns: 33% 66%;
+
+    }
+
+    .col.desktop-order-2 {
+        order: 2;
+    }
+}
+
+.col.escape-desktop {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+
+/* ------------------------- Basis styling ------------------------- */
+
+/* Algemeen */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Greycliff-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: var(--black-light);
+}
+
+/* Opbouw */
+
+section {
+    padding: 8px 0;
+}
+
+section.no-space {
+    padding: 0;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* Typografie */
+
+@font-face {
+    font-family: Greycliff-Bold;
+    src: url("../fonts/GreycliffCF-Bold.eot") format("eot"),
+        url("../fonts/GreycliffCF-Bold.woff") format("woff"),
+        url("../fonts/GreycliffCF-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Greycliff-Regular;
+    src: url("../fonts/GreycliffCF-Regular.eot") format("eot"),
+        url("../fonts/GreycliffCF-Regular.woff") format("woff"),
+        url("../fonts/GreycliffCF-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Hamburg-AH-Bold;
+    src: url("../fonts/hamburg-ah-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Hamburg-AH-Regular;
+    src: url("../fonts/hamburg-ah-regular.woff2") format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: Greycliff-Bold;
+}
+
+h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 133%;
+}
+
+h2.large {
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 133%;
+}
+
+h2.small {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .2px;
+}
+
+h3.large,
+h4.large,
+.subtitle {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .2px;
+}
+
+h3.small {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .2px;
+}
+
+.subtitle {
+    font-family: Greycliff-Bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    margin: 16px 0;
+    padding: 11px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.btn.primary {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    color: var(--white);
+}
+
+.btn.primary:hover {
+    background-color: var(--red-light);
+    border-color: var(--red-light);
+}
+
+/* Links */
+
+a {
+    color: var(--black-light);
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+
+
+#svg_arrow-right {
+    height: 20px;
+    width: 20px;
+    fill: var(--white);
+}
+
+/* Images */
+
+img {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    color: white;
+}
+
+/* List */
+
+ul.list {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+ul.list li {
+    margin: 8px 0;
+}
+
+/* ------------------------- Albert Heijn menu ------------------------- */
+.site-header {
+    height: 128px;
+}
+
+.main-navigation-container {
+    border-bottom: 1px solid #cdcdcd;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+
+.nav-main {
+    padding: 16px;
+    height: 65px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-main-item {
+    display: inline-flex;
+    height: 100%;
+}
+
+.nav-main-item>a {
+    display: flex;
+}
+
+.nav-main-item .nav-img {
+    height: 32px;
+    width: 32px;
+}
+
+.nav-main-item.link-container,
+.nav-main-item.searchbar {
+    display: none;
+}
+
+.nav-main-item.shopping-cart .link-label,
+.nav-main-item.logo .link-icon {
+    display: none;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .nav-main-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-main-item.mobile-toggle {
+        display: none;
+    }
+
+    .nav-main-item.link-container,
+    .nav-main-item.searchbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-main-item>a {
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        max-width: fit-content;
+    }
+
+    .nav-main-item.shopping-cart .link-label,
+    .nav-main-item.logo .link-icon {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .link-icon .icon {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .link-icon .icon img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .nav-main-item .nav-link {
+        padding: 8px 12px;
+
+    }
+
+    .nav-main-item a {
+        text-decoration: none;
+        color: var(--black-light);
+    }
+
+    .nav-main-item.searchbar {
+        width: 320px;
+    }
+
+    .nav-main-item.searchbar input {
+        width: 100%;
+        padding: 10px 16px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+    }
+
+}
+
+/* ------------------------- Allerhande menu ------------------------- */
+
+/* Globaal */
+.sub-navigation-container {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 64px;
+}
+
+.nav-allerhande {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+
+}
+
+.nav-allerhande .logo {
+    margin: 12px 0;
+    width: 130px;
+    height: 21px;
+}
+
+.nav-allerhande .searchbar,
+.nav-allerhande .input-box {
+    display: none;
+}
+
+.nav-allerhande .searchbar input {
+    width: 220px;
+    padding: 16px;
+    padding-right: 65px;
+    border-radius: 8px;
+}
+
+.nav-allerhande .menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-allerhande .menu-toggle .icon {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-image: url('../images/icons/icon-caret-down-white.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s linear;
+    margin-left: 8px;
+}
+
+.nav-allerhande .menu-toggle .icon img {
+    max-width: 100%;
+}
+
+.nav-allerhande .menu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+}
+
+.site-header .overlay {
+    position: fixed;
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+
+    background: rgba(48, 48, 48, .6);
+}
+
+.nav-allerhande .menu .menu-item {
+    list-style-type: none;
+    padding: 12px 7px;
+    width: 50%;
+    border-bottom: 1px solid var(--grey-border)
+}
+
+.nav-allerhande .menu .menu-item.active a {
+    opacity: 1;
+}
+
+.nav-allerhande>a {
+    border: none;
+}
+
+.nav-allerhande .menu .menu-item a {
+    opacity: .6;
+    text-decoration: none;
+    border: none;
+}
+
+.nav-allerhande .input-box {
+    width: 220px;
+    height: 40px;
+}
+
+.nav-allerhande .input-box .input-field {
+    width: calc(100% - 40px);
+    height: 100%;
+}
+
+.nav-allerhande .input-box .search-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+/* Dark */
+.sub-navigation-container.dark {
+    background-color: var(--black);
+}
+
+.sub-navigation-container.dark .nav-allerhande {
+    color: var(--white);
+}
+
+.sub-navigation-container.dark .nav-allerhande .searchbar input {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.nav-allerhande .menu {
+    background-color: var(--black);
+}
+
+.sub-navigation-container.dark .nav-allerhande .menu .menu-item a {
+    color: var(--white);
+}
+
+.sub-navigation-container.dark .nav-allerhande .menu-toggle .icon {
+    background-image: url('../images/icons/icon-caret-down-white.svg');
+}
+
+
+/* Light */
+.sub-navigation-container.light {
+    background-color: var(--green-light);
+}
+
+.sub-navigation-container.light .nav-allerhande .menu {
+    background-color: var(--green-light);
+}
+
+.sub-navigation-container.light .nav-allerhande .menu .menu-item.active {
+    border-radius: 4px;
+}
+
+.sub-navigation-container.light .nav-allerhande .menu .menu-item.active a {
+    color: var(--green);
+}
+
+.sub-navigation-container.light .nav-allerhande .input-box .search-button {
+    background-color: var(--green);
+}
+
+.sub-navigation-container.light .nav-allerhande .menu-toggle .icon {
+    background-image: url('../images/icons/icon-caret-down.svg');
+}
+
+
+
+/* Toggled navigation  */
+@media only screen and (max-width: 768px) {
+
+    .site-header.toggled .sub-navigation-container .menu {
+        height: 156px;
+    }
+
+    .site-header.toggled .overlay {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .site-header.toggled .nav-allerhande .menu-toggle .icon {
+        transform: rotateX(180deg);
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+    .nav-allerhande .menu {
+        position: relative;
+    }
+
+    .nav-allerhande .menu .menu-item {
+        width: auto;
+        border: none;
+    }
+
+    .nav-allerhande .menu-toggle {
+        display: none;
+    }
+
+    .nav-allerhande .menu {
+        display: flex;
+        /* margin: 12px 8px; */
+        height: auto;
+    }
+
+    .nav-allerhande .searchbar,
+    .nav-allerhande .input-box {
+        display: flex;
+
+    }
+
+    .sub-navigation-container.light .nav-allerhande .menu .menu-item.active {
+        background-color: var(--white);
+    }
+}
+
+/* ------------------------- Recept cards ------------------------- */
+
+/* Sidescroll */
+
+.sidescroll {
+    display: flex;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+@media only screen and (min-width: 1024px) {
+    .sidescroll {
+        display: grid;
+    }
+}
+
+/* Cards */
+
+.card-recipe {
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 15px 18px 0 rgba(0, 0, 0, .05);
+    border-radius: 16px;
+    border-bottom: none;
+    width: 300px;
+    transition: all .2s ease-in-out;
+}
+
+@media only screen and (min-width: 1024px) {
+    .card-recipe {
+        width: 100%;
+    }
+}
+
+.card-recipe:hover {
+    box-shadow: 0 22px 24px 0 rgba(0, 0, 0, .1);
+    transform: translateY(-2px);
+}
+
+.card-recipe .header {
+    height: 128px;
+}
+
+.card-recipe .header img {
+    border-radius: 16px 16px 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-recipe ul {
+    margin: 0;
+    padding: 12px 16px;
+    list-style-type: none;
+    background-color: var(--grey-light);
+}
+
+.card-recipe li {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 16px 0 0;
+    font-size: 13px;
+}
+
+.card-recipe li img {
+    margin-right: 4px;
+    max-height: 16px;
+    max-width: 16px;
+}
+
+.card-recipe .footer {
+    min-height: 96px;
+    padding: 16px;
+    font-family: Greycliff-Bold;
+    line-height: 150%;
+}
+
+
+/* ------------------------- Homepage ------------------------- */
+
+/* Header */
+
+.banner {
+    margin-top: 24px;
+    padding: 24px;
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 100%), url(../images/homepage/allerhande-sint-kruidnoten.jpg);
+}
+
+.banner .input-box {
+
+    width: 100%;
+    height: 64px;
+}
+
+
+
+.banner .search-button {
+    border: none;
+}
+
+.banner .input-box input {
+    font-size: 16px;
+}
+
+.banner .search-button {
+    width: 64px;
+    height: 64px;
+    padding: 20px;
+    background-color: var(--red);
+}
+
+.banner .link {
+    margin-top: 32px;
+    font-family: Greycliff-Bold;
+    font-size: 16px;
+    letter-spacing: .2px;
+    text-decoration: none;
+    transition: opacity .2s ease;
+    color: var(--white);
+    border: none;
+}
+
+.banner-logo {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.banner-logo .recipe-link {
+    color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+    .banner {
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 64px;
+    }
+
+    .banner .input-box {
+        width: 80%;
+        height: 88px;
+        margin: auto;
+    }
+
+    .banner .search-button {
+        padding: 28px;
+        width: 88px;
+        height: 88px;
+    }
+
+    .banner-logo {
+        display: flex;
+        margin-top: 32px;
+    }
+
+    .banner .logo img {
+        width: 150px;
+        height: 36px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .banner {
+        padding-top: 128px;
+    }
+
+    .banner-logo {
+        margin-top: 64px;
+    }
+
+    .banner .input-box {
+        max-width: 708px;
+    }
+
+    .banner .logo img {
+        width: 200px;
+        height: 36px;
+    }
+
+}
+
+/* Content */
+.home-content {
+    height: 250px;
+}
+
+.home-content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .home-content {
+        height: 350px;
+    }
+}
+
+/* Recept collage */
+
+.recipe-link {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: none;
+    transition: transform .2s ease-in-out;
+}
+
+.recipe-link:hover {
+    transform: translateX(2px);
+}
+
+.recipe-link .title {
+    margin-right: 4px;
+}
+
+.recipe-link .info {
+    margin-right: 16px;
+}
+
+.recipe-link .title {
+    font-family: Greycliff-Bold;
+}
+
+.recipe-link img {
+    margin-top: 4px;
+    height: 12px;
+    width: auto;
+}
+
+/* Links box */
+
+.link-box {
+    margin-top: 32px;
+    padding: 16px;
+    background-color: var(--grey-light);
+}
+
+@media only screen and (min-width: 1024px) {
+    .link-box {
+        padding: 48px;
+    }
+}
+
+.link-box .header {
+    margin: 16px 0;
+}
+
+.link-box ul {
+    margin: 0;
+    padding: 16px 0;
+    list-style-type: none;
+    border-top: 1px solid var(--grey-border-light);
+}
+
+.link-box li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link-box li a {
+    transition: transform .2s ease-in-out;
+}
+
+.link-box li a:hover {
+    transform: translateX(4px);
+}
+
+.link-box li img {
+    margin: 4px 8px 0 0;
+    height: 12px;
+    width: auto;
+}
+
+.link-box .page-link {
+    margin: 8px 0;
+    font-size: 16px;
+    border-bottom: none;
+}
+
+/* ------------------------- Recept pagina ------------------------- */
+
+/* Recept Hero */
+
+.hero-section {
+    background-color: var(--beige-light);
+}
+
+.recipe-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.recipe-container .recipe-hero {
+    width: 100%;
+    max-height: 360px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 786px) {
+    .recipe-container {
+        height: 460px;
+    }
+
+    .recipe-container .recipe-hero {
+        max-height: unset;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .hero-section {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .recipe-container {
+        height: 560px;
+    }
+}
+
+.recommended {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.recommended h4 {
+    color: var(--white);
+}
+
+
+/* ------------------------- Recipe card box ------------------------- */
+
+.recipe-card {
+    padding: 16px;
+    margin-top: 24px;
+}
+
+.recipe-card .recipe-features {
+    list-style: none;
+    padding: 0;
+}
+
+.recipe-card .recipe-features .feature {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 8px;
+}
+
+.recipe-card .recipe-features .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+}
+
+.recipe-card .rating-container {
+    display: flex;
+    flex-flow: row;
+}
+
+.recipe-card .stars {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.recipe-card .stars .icon {
+    margin-right: 6px;
+}
+
+.recipe-card .stars .icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.recipe-card .recipe-tags {
+    margin-top: 12px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.recipe-card .recipe-tags .tag {
+    display: inline-flex;
+    padding: 12px 16px;
+    background-color: var(--grey);
+    margin-right: 4px;
+    margin-bottom: 4px;
+    color: var(--white);
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 786px) {
+    .recipe-card {
+        max-width: 276px;
+        background-color: var(--transparent-white);
+    }
+}
+
+/* ------------------------- input box with button ------------------------- */
+.input-box {
+    font-family: 'Greycliff-Regular';
+    display: flex;
+    flex-flow: row;
+    border-radius: 4px;
+    overflow: hidden;
+    color: var(--grey);
+}
+
+.input-box input {
+    width: calc(100% - 64px);
+    height: 100%;
+    padding-left: 16px;
+    border: none;
+}
+
+/* ------------------------- Footer ------------------------- */
+
+/* Main footer */
+
+footer {
+    padding: 32px 0;
+    background-color: var(--beige-light);
+}
+
+footer .header {
+    margin-bottom: 24px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer li {
+    margin: 16px 0;
+}
+
+footer li a {
+    transition: all .1s;
+}
+
+footer li a:hover {
+    color: #3b9fe2;
+}
+
+footer .site-link {
+    font-size: 14px;
+    border-bottom: none;
+    color: var(--beige);
+}
+
+/* Footer balk */
+
+footer .footer-balk {
+    margin-top: 48px;
+}
+
+footer .divider {
+    border-bottom: 1px solid var(--beige);
+}
+
+footer .contact {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social-media img {
+    margin-right: 16px;
+    height: 32px;
+    width: auto;
+}
+
+footer .social-media a {
+    border-bottom: none;
+}
+
+footer .logo img {
+    height: 48px;
+    width: auto;
+}
+
+footer .company ul {
+    padding: 32px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .company ul li {
+    margin: 8px 16px;
+}
