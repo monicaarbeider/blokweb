@@ -5,8 +5,6 @@
 
 **Klas:** KlasInh09
 
-**Markdown Cheat Sheet:** [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
 
 
 ## Bronnenlijst
@@ -18,41 +16,58 @@
 
 
 
-## Eindgesprek (week 7/8)
+## Wat heb ik gemaakt?
+**Pagina 1:** Homepage Allerhande
 
--dit ging goed & dit was lastig-
+**Pagina 2:** Recept pagina (Volkoren pasta met kip)
 
-**Screenshot(s):**
+**Focus:** Responsive website (mobiel, tablet, desktop)
 
--screenshot(s) van je eindresultaat-
+**JavaScript toepassing:** Mobiele menu met toggle en overlay
 
-
-
-## Voortgang 3 (week 6)
-
--same as voortgang 1-
+**Micro-interacties:** hovers, back-to-top button, zoekbalk
 
 
 
-## Voortgang 2 (week 5)
+## Proces
 
--same as voortgang 1-
+### Week 1
+Structuur website opgezet met behulp van breakdownschets + invullen van de content (zoals titels, tekst en afbeeldingen).
+
+### Week 2
+Algemene basisstyling opgezet (zoals fonts, kleuren, linkjes, etc).
+
+### Week 3
+Kleuren omgezet naar variabelen na hier onderzoek naar gedaan te hebben + responsive grid opgezet.
+
+### Week 4
+Styling van het menu + responsive maken van het menu.
+
+### Week 5
+Werkend maken van het menu door middel van JavaScript.
+
+### Week 6
+Styling van de homepage + structuur opgezet van de subpage + invullen van de content van de subpage.
+
+### Week 7
+Styling van de subpage + styling van de footer + toevoegen micro-interacties (hovers, back to top button, zoekbalk).
+
+### Week 8
+Detail puntjes op het gebied van styling.
 
 
 
-## Voortgang 1 (week 3)
-
-### Stand van zaken
-
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent met korte uitleg-
+## Wat ging goed?
+Alles op het gebied van CSS styling. Handig het werken met variabelen. Had graag met meer variabelen gewerkt dan alleen de kleuren.
 
 
 
-## Breakdownschets (week 1)
+## Waar had ik moeite mee?
+Ik ben wel een tijdje bezig geweest met de JavaScript, maar trots op het eindresultaat. Verder was het responsive maken van de recept pagina lastig. Hier valt de recept-info-box op desktop over de hero afbeelding heen, maar op mobiel staat deze onder de hero afbeelding. Uiteindelijk toch gelukt.
+
+
+
+## Breakdownschets
 
 **Breakdownschets:** Allerhande homepage hoofdstructuur + section details
 
@@ -62,7 +77,7 @@
 
 
 
-## Intake (week 1)
+## Intake
 
 **Je startniveau:** Rode pieste
 
